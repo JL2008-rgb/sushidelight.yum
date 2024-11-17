@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Sushi Delight - Delicious Sushi and Rolls">
+    <title>Sushi Delight - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004080;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1rem 0.5rem;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.1);
+        }
+
+        .Intro {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('sushi-uhd-4k-wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .introcon {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e6b800;
+            transform: translateY(-5px);
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+            flex-grow: 1;
+            background-color: #ffffff;
+            animation: fadeIn 1s ease;
+        }
+
+        .menu-link {
+            background-color: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .menu-link:hover {
+            background-color: #218838;
+            transform: translateY(-5px);
+        }
+
+        .advertisement {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .advertisement h2 {
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            color: #001f3f;
+        }
+
+        .advertisement p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .advertisement video {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contactUS {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .contact-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #0056b3;
+        }
+
+        footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sushi Delight</h1>
+        <p>Bringing people together through delicious sushi.</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <section class="Intro" id="intro">
+        <div class="introcon">
+            <h2>Welcome to Sushi Delight</h2>
+            <p>Experience the freshest sushi crafted with passion.</p>
+            <a href="menu.html" class="cta-button">View Our Menu</a>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <h2>What are you waiting for?</h2>
+        <p>Order now and enjoy our delicious sushi rolls!</p>
+        <a href="order.html" class="menu-link">Order Now</a>
+    </section>
+
+    <section class="advertisement">
+        <h2>Special Offer</h2>
+        <p>Enjoy 20% off on all orders this weekend. Don't miss out!</p>
+        <video src="video.mp4" autoplay muted loop playsinline></video>
+    </section>
+
+    <section class="section" id="about">
+        <h2>Who We Are</h2>
+        <p>Welcome to Sushi Delight! We are passionate about bringing people together through sushi.</p>
+        <h2>Our Mission</h2>
+        <p>At Sushi Delight, we're passionate about bringing people together through the joy of fresh, delicious sushi. Every dish we serve is made with care, using only the finest ingredients, to create a dining experience that feels like home. Our mission is to make every bite a moment of happiness, and every visit an experience you’ll remember and want to share with friends and family.</p>
+        <ul>
+            <li>Innovation: We embrace creativity and out-of-the-box thinking.</li>
+            <li>Integrity: We believe in transparency and honesty in all our dealings.</li>
+            <li>Customer Satisfaction: Our clients' needs are at the forefront of everything we do.</li>
+            <li>Collaboration: Working together helps us achieve more.</li>
+        </ul>
+        <h2>Our Vision</h2>
+        <p>We dream of a world where sushi isn’t just food, it’s an experience that connects people. Our vision is to build a community of sushi lovers who value quality, creativity, and the simple joy of sharing a meal together. We want to be the place you turn to for great food, good vibes, and moments of connection—whether you’re here for a quick bite or celebrating life’s big moments.</p>
+    </section>
+
+    <section class="contactUS" id="contact">
+        <div class="contact-container">
+            <h2>Contact Details</h2>
+            <p>Reach out to us via the following:</p>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> <a href="tel:+639153485262">0915 348 5262</a></p>
+                <p><strong>Email:</strong> <a href="mailto:rosedaljohn@gmail.com">rosedaljohn@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sushi Delight. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
